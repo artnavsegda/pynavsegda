@@ -25,4 +25,4 @@ def my_callback(sigtype, join, state):
 cip.subscribe("d", 1, my_callback)  # run 'my_callback` when digital join 1 changes
 
 # this will close the socket connection when you're finished
-cip.stop()
+# cip.stop()
