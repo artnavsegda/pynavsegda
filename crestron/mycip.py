@@ -24,12 +24,7 @@ def my_callback(sigtype, join, state):
 
 cip.subscribe("d", 1, my_callback)  # run 'my_callback` when digital join 1 changes
 
-cip.set("d", 135, 1)
-cip.set("d", 135, 0)
-cip.set("d", 136, 1)
-cip.set("d", 136, 0)
-cip.set("d", 137, 1)
-cip.set("d", 137, 0)
+cip.set("a", 33, 50)
 
 # this will close the socket connection when you're finished
 cip.stop()
