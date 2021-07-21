@@ -6,7 +6,7 @@ import cipclient
 logging.basicConfig(level=logging.DEBUG, format="[%(levelname)s] (%(threadName)-10s) %(message)s")
 
 # set up the client to connect to hostname "processor" at IP-ID 0x0A
-cip = cipclient.CIPSocketClient("192.168.88.41", 0x03)
+cip = cipclient.CIPSocketClient("192.168.60.33", 0x04)
 
 # initiate the socket connection and start worker threads
 cip.start()
@@ -26,7 +26,7 @@ cip.subscribe("d", 1, my_callback)  # run 'my_callback` when digital join 1 chan
 
 # cip.set("a", 33, 50)
 
-cip.pulse(202);
+# cip.pulse(202);
 
 # this will close the socket connection when you're finished
-cip.stop()
+# cip.stop()
